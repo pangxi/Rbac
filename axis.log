@@ -1,0 +1,447 @@
+-DEBUG-2019/10/22 16:21:36,069-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from user where username=张三 and password=123 
+-DEBUG-2019/10/22 16:21:36,185-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 
+-DEBUG-2019/10/22 16:27:14,696-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username=张三 and password=123 
+-DEBUG-2019/10/22 16:27:14,809-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 
+-DEBUG-2019/10/22 16:29:25,116-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 16:29:25,244-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 16:29:25,373-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:09:43,315-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 17:09:43,454-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 17:09:43,590-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:09:43,599-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:09:43,600-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 17:09:43,611-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:09:43,612-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 17:09:43,616-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:09:43,617-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 17:09:43,621-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:09:43,623-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:09:43,624-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 17:09:43,628-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:09:43,630-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:09:43,633-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 17:09:43,636-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:09:43,639-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 17:09:43,642-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:09:43,643-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 17:09:43,645-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:09:43,646-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 17:09:43,648-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:09:43,649-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:09:43,650-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 17:09:43,652-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:09:43,654-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 17:09:43,656-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 17:14:01,652-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 17:14:01,751-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 17:14:01,855-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:14:01,864-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:14:01,866-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 17:14:01,877-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:14:01,880-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 17:14:01,887-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:14:01,888-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 17:14:01,893-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:14:01,895-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:14:01,897-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 17:14:01,900-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:14:01,902-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:14:01,904-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 17:14:01,906-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:14:01,909-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 17:14:01,912-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:14:01,914-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 17:14:01,919-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:14:01,920-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 17:14:01,923-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:14:01,925-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:14:01,926-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 17:14:01,928-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:14:01,930-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 17:14:01,931-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 17:15:48,031-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 17:15:48,134-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 17:15:48,237-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:15:48,245-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:15:48,248-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 17:15:48,261-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:15:48,263-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 17:15:48,269-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:15:48,271-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 17:15:48,273-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:15:48,276-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:15:48,277-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 17:15:48,279-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:15:48,282-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:15:48,283-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 17:15:48,285-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:15:48,287-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 17:15:48,290-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:15:48,291-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 17:15:48,296-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:15:48,298-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 17:15:48,301-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:15:48,303-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:15:48,304-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 17:15:48,306-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:15:48,308-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 17:15:48,309-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 17:25:30,465-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 17:25:30,571-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 17:25:30,671-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:25:30,678-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:25:30,679-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 17:25:30,690-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:25:30,691-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 17:25:30,694-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:25:30,695-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 17:25:30,697-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:25:30,701-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:25:30,702-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 17:25:30,704-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:25:30,706-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:25:30,707-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 17:25:30,709-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:25:30,711-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 17:25:30,714-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:25:30,715-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 17:25:30,718-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:25:30,719-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 17:25:30,722-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:25:30,724-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:25:30,725-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 17:25:30,727-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:25:30,728-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 17:25:30,730-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 17:28:11,536-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 17:28:11,638-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 17:28:11,743-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:28:11,753-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:28:11,755-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 17:28:11,767-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:28:11,768-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 17:28:11,771-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:28:11,773-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 17:28:11,776-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:28:11,778-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:28:11,781-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 17:28:11,784-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:28:11,787-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:28:11,789-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 17:28:11,791-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:28:11,794-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 17:28:11,796-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:28:11,797-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 17:28:11,801-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:28:11,803-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 17:28:11,805-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:28:11,807-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:28:11,809-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 17:28:11,811-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:28:11,813-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 17:28:11,815-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 17:30:12,747-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 17:30:12,846-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 17:30:12,958-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:30:12,968-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:30:12,970-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 17:30:12,981-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:30:12,982-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 17:30:12,986-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:30:12,988-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 17:30:12,991-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:30:12,993-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:30:12,994-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 17:30:12,996-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:30:12,998-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:30:12,999-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 17:30:13,001-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:30:13,004-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 17:30:13,006-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:30:13,008-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 17:30:13,011-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:30:13,014-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 17:30:13,017-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:30:13,019-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:30:13,020-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 17:30:13,023-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:30:13,024-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 17:30:13,026-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 17:33:15,422-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 17:33:15,531-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 17:33:15,631-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:33:15,641-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:15,642-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 17:33:15,652-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:15,653-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 17:33:15,656-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:15,658-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 17:33:15,660-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:15,663-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:15,665-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 17:33:15,667-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:15,670-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:15,671-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 17:33:15,673-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:15,676-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 17:33:15,677-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:15,678-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 17:33:15,681-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:15,683-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 17:33:15,686-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:15,688-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:15,689-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 17:33:15,692-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:15,695-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 17:33:15,697-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 17:33:29,778-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 17:33:29,782-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 17:33:29,786-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:33:29,788-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:29,789-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 17:33:29,793-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:29,797-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 17:33:29,800-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:29,802-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 17:33:29,805-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:29,808-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:29,811-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 17:33:29,814-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:29,816-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:29,818-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 17:33:29,820-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:29,822-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 17:33:29,825-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:29,827-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 17:33:29,833-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:29,835-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 17:33:29,838-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:29,842-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:33:29,844-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 17:33:29,847-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:33:29,852-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 17:33:29,854-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 17:35:40,487-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 17:35:40,616-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 17:35:40,750-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 17:35:40,763-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:35:40,764-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 17:35:40,778-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:35:40,780-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 17:35:40,786-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:35:40,789-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 17:35:40,791-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:35:40,793-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:35:40,794-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 17:35:40,797-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:35:40,799-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:35:40,801-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 17:35:40,802-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:35:40,806-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 17:35:40,809-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:35:40,811-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 17:35:40,815-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:35:40,818-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 17:35:40,820-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:35:40,822-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 17:35:40,824-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 17:35:40,826-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 17:35:40,828-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 17:35:40,829-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 18:00:45,136-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 18:00:45,237-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 18:00:45,344-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 18:00:45,356-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:00:45,358-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 18:00:45,373-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:00:45,375-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 18:00:45,379-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:00:45,381-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 18:00:45,385-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:00:45,387-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:00:45,389-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 18:00:45,391-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:00:45,394-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:00:45,395-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 18:00:45,398-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:00:45,401-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 18:00:45,404-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:00:45,406-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 18:00:45,410-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:00:45,413-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 18:00:45,417-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:00:45,419-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:00:45,420-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 18:00:45,422-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:00:45,425-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 18:00:45,426-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 18:00:45,428-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from element where id in (select eid from role_element where rid=?) 
+-DEBUG-2019/10/22 18:00:45,430-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer)
+-DEBUG-2019/10/22 18:03:13,258-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 18:03:13,378-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 18:03:13,489-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 18:03:13,502-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:13,503-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 18:03:13,512-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:13,513-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 18:03:13,517-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:13,519-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 18:03:13,521-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:03:13,523-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:13,525-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 18:03:13,528-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:03:13,530-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:13,532-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 18:03:13,536-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:03:13,539-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 18:03:13,542-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:13,544-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 18:03:13,547-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:13,550-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 18:03:13,554-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:03:13,556-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:13,559-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 18:03:13,562-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:03:13,564-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 18:03:13,566-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 18:03:13,568-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from element where id in (select eid from role_element where rid=?) 
+-DEBUG-2019/10/22 18:03:13,569-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer)
+-DEBUG-2019/10/22 18:03:13,572-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 18:03:24,709-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 18:03:24,711-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 李四(String), 123(String)
+-DEBUG-2019/10/22 18:03:24,714-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 18:03:24,716-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:24,718-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 2(Integer), 2(Integer), 0(Integer)
+-DEBUG-2019/10/22 18:03:24,721-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:24,723-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 2(Long), 2(Long), 2(Integer)
+-DEBUG-2019/10/22 18:03:24,726-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:24,728-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 2(Long), 2(Long), 6(Integer)
+-DEBUG-2019/10/22 18:03:24,729-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:03:24,733-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 18:03:24,734-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 2(Long), 2(Long), 7(Integer)
+-DEBUG-2019/10/22 18:03:24,737-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 18:03:24,739-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 18:03:24,740-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 18:03:24,743-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from element where id in (select eid from role_element where rid=?) 
+-DEBUG-2019/10/22 18:03:24,746-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 2(Integer)
+-DEBUG-2019/10/22 18:03:24,752-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 0
+-DEBUG-2019/10/22 22:20:37,316-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 22:20:37,427-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 22:20:37,550-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:20:37,560-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:20:37,562-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 22:20:37,573-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:20:37,575-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 22:20:37,578-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:20:37,579-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 22:20:37,582-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:20:37,586-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:20:37,588-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 22:20:37,591-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:20:37,592-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:20:37,594-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 22:20:37,597-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:20:37,601-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 22:20:37,604-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:20:37,606-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 22:20:37,609-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:20:37,612-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 22:20:37,614-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:20:37,616-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:20:37,618-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 22:20:37,620-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:20:37,623-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 22:20:37,624-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 22:20:37,626-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from element where id in (select eid from role_element where rid=?) 
+-DEBUG-2019/10/22 22:20:37,627-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer)
+-DEBUG-2019/10/22 22:20:37,633-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:20:37,635-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from url where id in (select uid from role_url where rid=?) 
+-DEBUG-2019/10/22 22:20:37,636-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer)
+-DEBUG-2019/10/22 22:20:37,641-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:20:37,644-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from url 
+-DEBUG-2019/10/22 22:20:37,646-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 
+-DEBUG-2019/10/22 22:20:37,648-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 22:22:04,731-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 22:22:04,842-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 李四(String), 123(String)
+-DEBUG-2019/10/22 22:22:04,944-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:22:04,952-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:22:04,953-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 2(Integer), 2(Integer), 0(Integer)
+-DEBUG-2019/10/22 22:22:04,962-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:22:04,963-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 2(Long), 2(Long), 2(Integer)
+-DEBUG-2019/10/22 22:22:04,965-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:22:04,968-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 2(Long), 2(Long), 6(Integer)
+-DEBUG-2019/10/22 22:22:04,970-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:22:04,972-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:22:04,974-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 2(Long), 2(Long), 7(Integer)
+-DEBUG-2019/10/22 22:22:04,976-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:22:04,977-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 22:22:04,979-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:22:04,981-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from element where id in (select eid from role_element where rid=?) 
+-DEBUG-2019/10/22 22:22:04,982-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 2(Integer)
+-DEBUG-2019/10/22 22:22:04,985-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 0
+-DEBUG-2019/10/22 22:22:04,986-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from url where id in (select uid from role_url where rid=?) 
+-DEBUG-2019/10/22 22:22:04,987-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 2(Integer)
+-DEBUG-2019/10/22 22:22:04,991-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 22:22:04,995-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from url 
+-DEBUG-2019/10/22 22:22:04,996-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 
+-DEBUG-2019/10/22 22:22:04,999-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 22:24:23,265-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 22:24:23,379-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 张三(String), 123(String)
+-DEBUG-2019/10/22 22:24:23,517-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:24:23,528-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:24:23,529-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer), 1(Integer), 0(Integer)
+-DEBUG-2019/10/22 22:24:23,538-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:24:23,540-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 1(Integer)
+-DEBUG-2019/10/22 22:24:23,543-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:24:23,545-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 3(Integer)
+-DEBUG-2019/10/22 22:24:23,547-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:24:23,550-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:24:23,551-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 4(Integer)
+-DEBUG-2019/10/22 22:24:23,554-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:24:23,557-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:24:23,559-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 5(Integer)
+-DEBUG-2019/10/22 22:24:23,562-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:24:23,566-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 3
+-DEBUG-2019/10/22 22:24:23,569-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:24:23,571-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 1(Long), 1(Long), 2(Integer)
+-DEBUG-2019/10/22 22:24:23,574-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:24:23,577-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 6(Integer)
+-DEBUG-2019/10/22 22:24:23,579-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:24:23,582-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:24:23,583-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 1(Long), 1(Long), 7(Integer)
+-DEBUG-2019/10/22 22:24:23,585-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:24:23,587-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 22:24:23,589-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 22:24:23,591-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from element where id in (select eid from role_element where rid=?) 
+-DEBUG-2019/10/22 22:24:23,592-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer)
+-DEBUG-2019/10/22 22:24:23,595-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:24:23,597-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from url where id in (select uid from role_url where rid=?) 
+-DEBUG-2019/10/22 22:24:23,598-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 1(Integer)
+-DEBUG-2019/10/22 22:24:23,601-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:24:23,604-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from url 
+-DEBUG-2019/10/22 22:24:23,605-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 
+-DEBUG-2019/10/22 22:24:23,608-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 22:25:06,716-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from users where username = ? and password = ? 
+-DEBUG-2019/10/22 22:25:06,719-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 李四(String), 123(String)
+-DEBUG-2019/10/22 22:25:06,723-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:25:06,725-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:25:06,727-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 2(Integer), 2(Integer), 0(Integer)
+-DEBUG-2019/10/22 22:25:06,730-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:25:06,733-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-====> Parameters: 2(Long), 2(Long), 2(Integer)
+-DEBUG-2019/10/22 22:25:06,738-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:25:06,740-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 2(Long), 2(Long), 6(Integer)
+-DEBUG-2019/10/22 22:25:06,745-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:25:06,747-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======>  Preparing: select m.* ,? rid from Menu m join role_menu r on r.mid = m.id where r.rid = ? and m.pid=? 
+-DEBUG-2019/10/22 22:25:06,749-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-======> Parameters: 2(Long), 2(Long), 7(Integer)
+-DEBUG-2019/10/22 22:25:06,753-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<======      Total: 0
+-DEBUG-2019/10/22 22:25:06,755-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<====      Total: 2
+-DEBUG-2019/10/22 22:25:06,758-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 1
+-DEBUG-2019/10/22 22:25:06,759-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from element where id in (select eid from role_element where rid=?) 
+-DEBUG-2019/10/22 22:25:06,761-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 2(Integer)
+-DEBUG-2019/10/22 22:25:06,764-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 0
+-DEBUG-2019/10/22 22:25:06,765-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from url where id in (select uid from role_url where rid=?) 
+-DEBUG-2019/10/22 22:25:06,767-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 2(Integer)
+-DEBUG-2019/10/22 22:25:06,771-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
+-DEBUG-2019/10/22 22:25:06,773-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==>  Preparing: select * from url 
+-DEBUG-2019/10/22 22:25:06,774-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-==> Parameters: 
+-DEBUG-2019/10/22 22:25:06,777-org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)-139-<==      Total: 2
